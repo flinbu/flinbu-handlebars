@@ -1,0 +1,15 @@
+//Default font var, you can declare yours
+$avenir: map-get($font-scheme, avenir);
+
+$primary: site-color(green);
+$danger: site-color(red); 
+
+//Bootstrap configuration
+// Here you can set values to Bootstrap scss vars. See https://github.com/twbs/bootstrap/blob/master/scss/_variables.scss for all available variables
+$theme-colors: (
+    "primary": $primary,
+    "danger": $danger
+);
+
+$font-family-base: $avenir;
+$body-bg: site-color(gray-lighter);

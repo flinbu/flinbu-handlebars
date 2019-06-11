@@ -1,0 +1,24 @@
+{
+  "name": "flinbu-handlebars",
+  "description": "flinbu starter Handlebars project",
+  "main": "index.js",
+  "authors": [
+    "Felipe Linares @flinbu"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Handlebars",
+    "HBS",
+    "flinbu",
+    "starter",
+    "project"
+  ],
+  "homepage": "https://github.com/flinbu/flinbu-handlebars",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

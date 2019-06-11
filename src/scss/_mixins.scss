@@ -1,0 +1,99 @@
+//Text colors
+@mixin text-colors() {
+  @each $color in $colors {
+    $color-name: nth($color, 1);
+    $color-hexa: nth($color, 2);
+    &.#{$color-name} {
+      color: $color-hexa;
+    }
+  }
+}
+
+//Custom class color
+@mixin custom-class-colors($class, $property: color, $self: false) {
+  @each $color in $colors {
+    $color-name: nth($color, 1);
+    $color-hexa: nth($color, 2);
+    @if $self {
+      &.#{$class}-#{$color-name} {
+        #{$property}: $color-hexa !important;
+      }
+    } @else {
+      .#{$class}-#{$color-name} {
+        #{$property}: $color-hexa !important;
+      }
+    }
+  }
+}
+
+//Background colors
+@mixin bg-colors() {
+  @each $color in $colors {
+    $color-name: nth($color, 1);
+    $color-hexa: nth($color, 2);
+    .bg-#{$color-name} {
+      background-color: $color-hexa;
+    }
+  }
+}
+
+//Gradient border
+@mixin gradient-border($from-color, $to-color, $size, $direction: 145deg) {
+  transition: 0.3s ease-in-out;
+  position: relative;
+  background-size: 100%;
+  color: $to-color;
+  &:after,
+  &:before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transition: opacity 0.3s ease-in-out;
+  }
+  &:before {
+    border: 1px solid transparent;
+    border-image: linear-gradient($direction, $from-color 0%, $to-color 100%)
+      $size;
+  }
+  &:after {
+    border-image: linear-gradient($direction, $to-color 0%, $from-color 100%)
+      $size;
+    opacity: 0;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $from-color;
+    &:before {
+      opacity: 0;
+    }
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+
+//Filters
+@mixin filter($properties) {
+  // Your vendor prefixing stuff here, I am using Bourbon:
+  @include prefixer(filter, $properties, webkit moz spec);
+}
+
+//Fonts
+@mixin avenir($weight: 'normal') {
+  @if $weight == 'bold' {
+    font-family: #{$avenir}, sans-serif;
+    font-weight: 900;
+  }
+  @if $weight == 'normal' {
+    font-family: #{$avenir}, sans-serif;
+    font-weight: 400;
+  }
+}

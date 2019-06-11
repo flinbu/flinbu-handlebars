@@ -1,0 +1,287 @@
+@each $size in $sizes {
+  $size-name: nth($size, 1);
+  $size-val: nth($size, 2);
+  $size-val-px: #{$size-name}px;
+  @if ($size-name == auto) {
+    $size-val-px: $size-name
+  }
+  .w-#{$size-name} {
+    width: $size-val;
+  }
+  .h-#{$size-name} {
+    height: $size-val;
+  }
+  .m-#{$size-name} {
+    margin: $size-val-px;
+  }
+  .p-#{$size-name} {
+    margin: $size-val-px;
+  }
+  .px-#{$size-name} {
+    padding-left: $size-val-px;
+    padding-right: $size-val-px;
+  }
+  .py-#{$size-name} {
+    padding-top: $size-val-px;
+    padding-bottom: $size-val-px;
+  }
+  .mx-#{$size-name} {
+    margin-left: $size-val-px;
+    margin-right: $size-val-px;
+  }
+  .my-#{$size-name} {
+    margin-top: $size-val-px;
+    margin-bottom: $size-val-px;
+  }
+  .mt-#{$size-name} {
+    margin-top: $size-val-px;
+  }
+  .ml-#{$size-name} {
+    margin-left: $size-val-px;
+  }
+  .mb-#{$size-name} {
+    margin-bottom: $size-val-px;
+  }
+  .mr-#{$size-name} {
+    margin-right: $size-val-px;
+  }
+  .pt-#{$size-name} {
+    padding-top: $size-val-px;
+  }
+  .pl-#{$size-name} {
+    padding-left: $size-val-px;
+  }
+  .pb-#{$size-name} {
+    padding-bottom: $size-val-px;
+  }
+  .pr-#{$size-name} {
+    padding-right: $size-val-px;
+  }
+  @include media-breakpoint-up(sm) {
+    .w-sm-#{$size-name} {
+      width: $size-val !important;
+    }
+    .h-sm-#{$size-name} {
+      height: $size-val !important;
+    }
+    .m-sm-#{$size-name} {
+      margin: $size-val-px !important;
+    }
+    .p-sm-#{$size-name} {
+      margin: $size-val-px !important;
+    }
+    .px-sm-#{$size-name} {
+      padding-left: $size-val-px !important;
+      padding-right: $size-val-px !important;
+    }
+    .py-sm-#{$size-name} {
+      padding-top: $size-val-px !important;
+      padding-bottom: $size-val-px !important;
+    }
+    .mx-sm-#{$size-name} {
+      margin-left: $size-val-px !important;
+      margin-right: $size-val-px !important;
+    }
+    .my-sm-#{$size-name} {
+      margin-top: $size-val-px !important;
+      margin-bottom: $size-val-px !important;
+    }
+    .mt-sm-#{$size-name} {
+      margin-top: $size-val-px !important;
+    }
+    .ml-sm-#{$size-name} {
+      margin-left: $size-val-px !important;
+    }
+    .mb-sm-#{$size-name} {
+      margin-bottom: $size-val-px !important;
+    }
+    .mr-sm-#{$size-name} {
+      margin-right: $size-val-px !important;
+    }
+    .pt-sm-#{$size-name} {
+      padding-top: $size-val-px !important;
+    }
+    .pl-sm-#{$size-name} {
+      padding-left: $size-val-px !important;
+    }
+    .pb-sm-#{$size-name} {
+      padding-bottom: $size-val-px !important;
+    }
+    .pr-sm-#{$size-name} {
+      padding-right: $size-val-px !important;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    .w-md-#{$size-name} {
+      width: $size-val !important;
+    }
+    .h-md-#{$size-name} {
+      height: $size-val !important;
+    }
+    .m-md-#{$size-name} {
+      margin: $size-val-px !important;
+    }
+    .p-md-#{$size-name} {
+      margin: $size-val-px !important;
+    }
+    .px-md-#{$size-name} {
+      padding-left: $size-val-px !important;
+      padding-right: $size-val-px !important;
+    }
+    .py-md-#{$size-name} {
+      padding-top: $size-val-px !important;
+      padding-bottom: $size-val-px !important;
+    }
+    .mx-md-#{$size-name} {
+      margin-left: $size-val-px !important;
+      margin-right: $size-val-px !important;
+    }
+    .my-md-#{$size-name} {
+      margin-top: $size-val-px !important;
+      margin-bottom: $size-val-px !important;
+    }
+    .mt-md-#{$size-name} {
+      margin-top: $size-val-px !important;
+    }
+    .ml-md-#{$size-name} {
+      margin-left: $size-val-px !important;
+    }
+    .mb-md-#{$size-name} {
+      margin-bottom: $size-val-px !important;
+    }
+    .mr-md-#{$size-name} {
+      margin-right: $size-val-px !important;
+    }
+    .pt-md-#{$size-name} {
+      padding-top: $size-val-px !important;
+    }
+    .pl-md-#{$size-name} {
+      padding-left: $size-val-px !important;
+    }
+    .pb-md-#{$size-name} {
+      padding-bottom: $size-val-px !important;
+    }
+    .pr-md-#{$size-name} {
+      padding-right: $size-val-px !important;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    .w-lg-#{$size-name} {
+      width: $size-val !important;
+    }
+    .h-lg-#{$size-name} {
+      height: $size-val !important;
+    }
+    .m-lg-#{$size-name} {
+      margin: $size-val-px !important;
+    }
+    .p-lg-#{$size-name} {
+      margin: $size-val-px !important;
+    }
+    .px-lg-#{$size-name} {
+      padding-left: $size-val-px !important;
+      padding-right: $size-val-px !important;
+    }
+    .py-lg-#{$size-name} {
+      padding-top: $size-val-px !important;
+      padding-bottom: $size-val-px !important;
+    }
+    .mx-lg-#{$size-name} {
+      margin-left: $size-val-px !important;
+      margin-right: $size-val-px !important;
+    }
+    .my-lg-#{$size-name} {
+      margin-top: $size-val-px !important;
+      margin-bottom: $size-val-px !important;
+    }
+    .mt-lg-#{$size-name} {
+      margin-top: $size-val-px !important;
+    }
+    .ml-lg-#{$size-name} {
+      margin-left: $size-val-px !important;
+    }
+    .mb-lg-#{$size-name} {
+      margin-bottom: $size-val-px !important;
+    }
+    .mr-lg-#{$size-name} {
+      margin-right: $size-val-px !important;
+    }
+    .pt-lg-#{$size-name} {
+      padding-top: $size-val-px !important;
+    }
+    .pl-lg-#{$size-name} {
+      padding-left: $size-val-px !important;
+    }
+    .pb-lg-#{$size-name} {
+      padding-bottom: $size-val-px !important;
+    }
+    .pr-lg-#{$size-name} {
+      padding-right: $size-val-px !important;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    .w-xl-#{$size-name} {
+      width: $size-val !important;
+    }
+    .h-xl-#{$size-name} {
+      height: $size-val !important;
+    }
+    .m-xl-#{$size-name} {
+      margin: $size-val-px !important;
+    }
+    .p-xl-#{$size-name} {
+      margin: $size-val-px !important;
+    }
+    .px-xl-#{$size-name} {
+      padding-left: $size-val-px !important;
+      padding-right: $size-val-px !important;
+    }
+    .py-xl-#{$size-name} {
+      padding-top: $size-val-px !important;
+      padding-bottom: $size-val-px !important;
+    }
+    .mx-xl-#{$size-name} {
+      margin-left: $size-val-px !important;
+      margin-right: $size-val-px !important;
+    }
+    .my-xl-#{$size-name} {
+      margin-top: $size-val-px !important;
+      margin-bottom: $size-val-px !important;
+    }
+    .mt-xl-#{$size-name} {
+      margin-top: $size-val-px !important;
+    }
+    .ml-xl-#{$size-name} {
+      margin-left: $size-val-px !important;
+    }
+    .mb-xl-#{$size-name} {
+      margin-bottom: $size-val-px !important;
+    }
+    .mr-xl-#{$size-name} {
+      margin-right: $size-val-px !important;
+    }
+    .pt-xl-#{$size-name} {
+      padding-top: $size-val-px !important;
+    }
+    .pl-xl-#{$size-name} {
+      padding-left: $size-val-px !important;
+    }
+    .pb-xl-#{$size-name} {
+      padding-bottom: $size-val-px !important;
+    }
+    .pr-xl-#{$size-name} {
+      padding-right: $size-val-px !important;
+    }
+  }
+}
+
+.fullheight {
+  height: 100vh;
+}
+.fullheight-min {
+  height: 100vh;
+  @include media-breakpoint-down(md) {
+    height: auto;
+    min-height: 100vh;
+  }
+}

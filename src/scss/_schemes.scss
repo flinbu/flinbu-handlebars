@@ -1,0 +1,50 @@
+//Fonts: Create your font scheme, by default Avenir font is included
+$font-scheme: (
+  avenir: 'Avenir'
+);
+
+//Colors: add here all colors you want, this will be available on Bootstrap too has CSS variables
+$colors: (
+  gray-lighter: #fbfbfb,
+  gray-light: #e1ebf7,
+  gray: #a0a7b6,
+  gray-dark: #707070,
+  gray-darker: #333333,
+  gray-blue: #525e7f,
+  gray-blue-2: #A0A7B6,
+  gray-blue-light: #9FABD0,
+  blue: #0093D7,
+  green: rgb(0, 186, 117),
+  green-2: rgb(0, 185, 0),
+  red: rgb(252, 0, 88),
+  yellow: #fcb033,
+  orange: #fb7146,
+  black: #181818,
+  white: #ffffff
+);
+
+//Sizes: add custom sizes to get helper clases
+$sizes: (
+    0: 0%,
+    5: 5%,
+    10: 10%,
+    15: 15%,
+    20: 20%,
+    25: 25%,
+    30: 30%,
+    35: 35%,
+    40: 40%,
+    45: 45%,
+    50: 50%,
+    55: 55%,
+    60: 60%,
+    65: 65%,
+    70: 70%,
+    75: 75%,
+    80: 80%,
+    85: 85%,
+    90: 90%,
+    95: 95%,
+    100: 100%,
+    auto: auto
+);

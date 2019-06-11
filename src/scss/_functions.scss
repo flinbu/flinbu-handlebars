@@ -1,0 +1,9 @@
+//Functions
+@function grayscale($value) {
+  @return #{'grayscale(' + $value + ')'};
+}
+
+//Get site color
+@function site-color($value) {
+  @return map-get($colors, $value);
+}

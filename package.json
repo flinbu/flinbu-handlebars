@@ -1,0 +1,67 @@
+{
+  "name": "flinbu-handlebars",
+  "version": "1.0.0",
+  "description": "flinbu starter Handlebars project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build",
+    "clean": "gulp clean",
+    "css": "gulp css",
+    "js": "gulp js",
+    "html": "gulp html",
+    "images": "gulp images",
+    "postinstall": "bower i"
+  },
+  "keywords": [
+    "Handlebars",
+    "HBS",
+    "flinbu",
+    "starter",
+    "project"
+  ],
+  "author": "Felipe Linares @flinbu",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flinbu/flinbu-handlebars.git"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "browser-sync": "^2.26.7",
+    "change-case": "^3.1.0",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.10",
+    "fs": "0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-data": "^1.3.1",
+    "gulp-deporder": "^1.1.0",
+    "gulp-download": "0.0.1",
+    "gulp-font2css": "^0.1.2",
+    "gulp-handlebars-html": "0.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-regex-rename": "^0.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-strip-debug": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
+    "handlebars": "^4.1.2",
+    "postcss-assets": "^5.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "boxicons": "^2.0.2",
+    "jquery": "^3.4.1"
+  }
+}

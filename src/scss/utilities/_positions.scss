@@ -1,0 +1,98 @@
+.pos-static {
+  position: static;
+}
+.pos-absolute {
+  position: absolute;
+}
+.pos-relative {
+  position: relative;
+}
+.pos-inherit {
+  position: inherit;
+}
+.pos-initial {
+  position: initial;
+}
+.pos-sticky {
+  position: sticky;
+}
+@include media-breakpoint-up(sm) {
+  .pos-sm-static {
+    position: static;
+  }
+  .pos-sm-absolute {
+    position: absolute;
+  }
+  .pos-sm-relative {
+    position: relative;
+  }
+  .pos-sm-inherit {
+    position: inherit;
+  }
+  .pos-sm-initial {
+    position: initial;
+  }
+  .pos-sm-sticky {
+    position: sticky;
+  }
+}
+@include media-breakpoint-up(md) {
+  .pos-md-static {
+    position: static;
+  }
+  .pos-md-absolute {
+    position: absolute;
+  }
+  .pos-md-relative {
+    position: relative;
+  }
+  .pos-md-inherit {
+    position: inherit;
+  }
+  .pos-md-initial {
+    position: initial;
+  }
+  .pos-md-sticky {
+    position: sticky;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .pos-lg-static {
+    position: static;
+  }
+  .pos-lg-absolute {
+    position: absolute;
+  }
+  .pos-lg-relative {
+    position: relative;
+  }
+  .pos-lg-inherit {
+    position: inherit;
+  }
+  .pos-lg-initial {
+    position: initial;
+  }
+  .pos-lg-sticky {
+    position: sticky;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .pos-xl-static {
+    position: static;
+  }
+  .pos-xl-absolute {
+    position: absolute;
+  }
+  .pos-xl-relative {
+    position: relative;
+  }
+  .pos-xl-inherit {
+    position: inherit;
+  }
+  .pos-xl-initial {
+    position: initial;
+  }
+  .pos-xl-sticky {
+    position: sticky;
+  }
+}
